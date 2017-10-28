@@ -2,6 +2,7 @@
  * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
  * http://cssreset.com
  */
+/* line 5, main.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -15,71 +16,90 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
 /* HTML5 display-role reset for older browsers */
+/* line 26, main.scss */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-	display: block;
-}
+  display: block; }
+
+/* line 30, main.scss */
 body {
-	line-height: 1;
-}
+  line-height: 1; }
+
+/* line 33, main.scss */
 ol, ul {
-	list-style: none;
-}
+  list-style: none; }
+
+/* line 36, main.scss */
 blockquote, q {
-	quotes: none;
-}
+  quotes: none; }
+
+/* line 39, main.scss */
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
-	content: none;
-}
+  content: '';
+  content: none; }
+
+/* line 44, main.scss */
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
+  border-collapse: collapse;
+  border-spacing: 0; }
 
 /*Main Css*/
-
+/* line 51, main.scss */
 :root {
-  --image-label-color: rgba(255,255,255,.8);
-}
+  --image-label-color: rgba(255, 255, 255, 0.8); }
 
+/* line 55, main.scss */
 body {
   font-family: Arial, sans-serif;
   color: #ccc;
-  background-color:#232728;
-}
+  background-color: #232728; }
 
- * {box-sizing: border-box;}
+/* line 61, main.scss */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
 
+/* line 63, main.scss */
 .quiz {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin: 0 auto;
   max-width: 1200px;
-  min-width: 600px;
-}
+  min-width: 600px; }
 
+/* line 72, main.scss */
 .answers {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-}
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
 
+/* line 77, main.scss */
 .question {
   margin: 25px 0 15px;
   font-size: 25px;
-  text-align: center;
-}
+  text-align: center; }
 
+/* line 83, main.scss */
 li {
   display: inline-block;
   width: 24%;
@@ -88,20 +108,20 @@ li {
   background-position: center center;
   text-align: center;
   padding: 105px 0 0;
-  cursor: pointer;
-}
+  cursor: pointer; }
 
+/* line 94, main.scss */
 .heading {
   padding: 60px 0 0;
   margin: 0 auto;
   font-weight: bold;
-  font-size: 30px;
-}
+  font-size: 30px; }
 
+/* line 101, main.scss */
 .answer {
-  margin: 5px 0;
-}
+  margin: 5px 0; }
 
+/* line 105, main.scss */
 .submit {
   padding: 10px 15px;
   background: LightGreen;
@@ -111,74 +131,123 @@ li {
   margin: 20px auto;
   border-radius: 5px;
   outline: none;
-  cursor: pointer;
-}
+  cursor: pointer; }
 
+/* line 117, main.scss */
 .heighlight {
   outline: 8px solid LightGreen;
-  filter: opacity(0.5) drop-shadow(0 0 0 LightGreen);
-}
+  -webkit-filter: opacity(0.5) drop-shadow(0 0 0 LightGreen);
+          filter: opacity(0.5) drop-shadow(0 0 0 LightGreen); }
 
+/* line 122, main.scss */
 li > p {
   padding: 7px 0;
   background-color: #ffffffCC;
   color: #000000FF;
-  font-weight: 900;
-}
+  font-weight: 900; }
 
+/* line 131, main.scss */
+#question1 li#Griffindor {
+  background-image: url("http://metro.objects.cdn.dream.io/wp-content/uploads/2016/07/screen-shot-2016-07-20-at-1-06-04-pm-200x140.jpeg"); }
+/* line 132, main.scss */
+#question1 li#Hufflepuff {
+  background-image: url("http://www.cubed3.com/media/newsimgs/h1q7jyfaaq6xkwe.jpg"); }
+/* line 133, main.scss */
+#question1 li#Ravenclaw {
+  background-image: url("http://3.bp.blogspot.com/_lXVrTUeY2SQ/TOctDbp4zyI/AAAAAAAACcc/ACjefJZddw4/s200/NevilleYR1.jpg"); }
+/* line 134, main.scss */
+#question1 li#Slytherin {
+  background-image: url("https://theday.co.uk/images/listing/stories/2016/2016-11/2016-11-18_fantastic-beasts.jpg"); }
 
-#question1 {
- li#Griffindor {background-image: url('http://metro.objects.cdn.dream.io/wp-content/uploads/2016/07/screen-shot-2016-07-20-at-1-06-04-pm-200x140.jpeg');}
- li#Hufflepuff {background-image: url('http://www.cubed3.com/media/newsimgs/h1q7jyfaaq6xkwe.jpg');}
- li#Ravenclaw {background-image: url('http://3.bp.blogspot.com/_lXVrTUeY2SQ/TOctDbp4zyI/AAAAAAAACcc/ACjefJZddw4/s200/NevilleYR1.jpg');}
- li#Slytherin {background-image: url('https://theday.co.uk/images/listing/stories/2016/2016-11/2016-11-18_fantastic-beasts.jpg');}
-}
+/* line 138, main.scss */
+#question2 li#Griffindor {
+  background-image: url("http://2.bp.blogspot.com/_U3N2Ivou5Ns/TUYpvyKUXFI/AAAAAAAAA_w/jT89_7a8ly0/s200/Hannah+Abbott.jpg"); }
+/* line 139, main.scss */
+#question2 li#Hufflepuff {
+  background-image: url("http://i0.kym-cdn.com/photos/images/masonry/001/065/779/d41.jpg"); }
+/* line 140, main.scss */
+#question2 li#Ravenclaw {
+  background-image: url("http://m1.paperblog.com/i/208/2084652/habras-mas-peliculas-harry-potter-harry-potte-L-g1hjs_.jpeg"); }
+/* line 141, main.scss */
+#question2 li#Slytherin {
+  background-image: url("https://www.informuji.cz/data/2017239124808_tn.jpg"); }
 
-#question2 {
- li#Griffindor {background-image: url('http://2.bp.blogspot.com/_U3N2Ivou5Ns/TUYpvyKUXFI/AAAAAAAAA_w/jT89_7a8ly0/s200/Hannah+Abbott.jpg');}
- li#Hufflepuff {background-image: url('http://i0.kym-cdn.com/photos/images/masonry/001/065/779/d41.jpg');}
- li#Ravenclaw {background-image: url('http://m1.paperblog.com/i/208/2084652/habras-mas-peliculas-harry-potter-harry-potte-L-g1hjs_.jpeg');}
- li#Slytherin {background-image: url('https://www.informuji.cz/data/2017239124808_tn.jpg');}
-}
+/* line 145, main.scss */
+#question3 li#Griffindor {
+  background-image: url("http://aviewfromthebridgeonbroadway.com/files/2015/09/Harry-Potter.jpg"); }
+/* line 146, main.scss */
+#question3 li#Hufflepuff {
+  background-image: url("http://metro.objects.cdn.dream.io/wp-content/uploads/2017/03/HarryPotter_WB_F7_HarryAndGinnyAboutToKiss_Still_080615_Land-200x140.jpg"); }
+/* line 147, main.scss */
+#question3 li#Ravenclaw {
+  background-image: url("https://d-nm.ppstatic.pl/kadr/k/r/36/28/5808b3feeccdf_o,size,200x140,q,70,h,32f950.jpg"); }
+/* line 148, main.scss */
+#question3 li#Slytherin {
+  background-image: url("https://d-nm.ppstatic.pl/kadr/k/r/8d/90/5805e7c19d302_o,size,200x140,q,70,h,24d4a5.jpg"); }
 
-#question3 {
- li#Griffindor {background-image: url('http://aviewfromthebridgeonbroadway.com/files/2015/09/Harry-Potter.jpg');}
- li#Hufflepuff {background-image: url('http://metro.objects.cdn.dream.io/wp-content/uploads/2017/03/HarryPotter_WB_F7_HarryAndGinnyAboutToKiss_Still_080615_Land-200x140.jpg');}
- li#Ravenclaw {background-image: url('https://d-nm.ppstatic.pl/kadr/k/r/36/28/5808b3feeccdf_o,size,200x140,q,70,h,32f950.jpg');}
- li#Slytherin {background-image: url('https://d-nm.ppstatic.pl/kadr/k/r/8d/90/5805e7c19d302_o,size,200x140,q,70,h,24d4a5.jpg');}
-}
+/* line 152, main.scss */
+#question4 li#Griffindor {
+  background-image: url("https://3a09223b3cd53870eeaa-7f75e5eb51943043279413a54aaa858a.ssl.cf3.rackcdn.com//f8fb516d51e76c096ca8cde2c7b618b4926686768-1302080291-4d9c2b23-620x348.jpg"); }
+/* line 153, main.scss */
+#question4 li#Hufflepuff {
+  background-image: url("http://capcityradio.net/b945live/wp-content/uploads/sites/7/bfi_thumb/Harry-Potter-2ys3zzzy4j9y23anh06qkq.jpg"); }
+/* line 154, main.scss */
+#question4 li#Ravenclaw {
+  background-image: url("https://www.usmagazine.com/wp-content/uploads/1250020461_hp-slide-1_lg.jpg?w=200"); }
+/* line 155, main.scss */
+#question4 li#Slytherin {
+  background-image: url("https://www.tapetus.pl/obrazki/m/129201.jpg"); }
 
-#question4 {
- li#Griffindor {background-image: url('https://3a09223b3cd53870eeaa-7f75e5eb51943043279413a54aaa858a.ssl.cf3.rackcdn.com//f8fb516d51e76c096ca8cde2c7b618b4926686768-1302080291-4d9c2b23-620x348.jpg');}
- li#Hufflepuff {background-image: url('http://capcityradio.net/b945live/wp-content/uploads/sites/7/bfi_thumb/Harry-Potter-2ys3zzzy4j9y23anh06qkq.jpg');}
- li#Ravenclaw {background-image: url('https://www.usmagazine.com/wp-content/uploads/1250020461_hp-slide-1_lg.jpg?w=200');}
- li#Slytherin {background-image: url('https://www.tapetus.pl/obrazki/m/129201.jpg');}
-}
+/* line 159, main.scss */
+#question5 li#Griffindor {
+  background-image: url("https://www.tapetus.pl/obrazki/m/206530.jpg"); }
+/* line 160, main.scss */
+#question5 li#Hufflepuff {
+  background-image: url("https://bookwitty.imgix.net/https%3A%2F%2Fuploads.bookwitty.com%2F45718a04-9d6b-490a-ae69-e5a19a85b3fc-feature-original.jpeg?ixlib=rails-2.1.4&auto=format&q=60&w=200&h=140&fit=crop&s=a3c44e1f51c46ab0e41aa71408329e06"); }
+/* line 161, main.scss */
+#question5 li#Ravenclaw {
+  background-image: url("https://ebooks.assure.ng/wp-content/uploads/2017/10/Harry-Potter-and-the-Goblet-of-Fire-200x140.jpg"); }
+/* line 162, main.scss */
+#question5 li#Slytherin {
+  background-image: url("http://capcityradio.net/b945live/wp-content/uploads/sites/7/bfi_thumb/Harry-Potter-348za6p7ahgdwcy909kxl6.jpg"); }
 
-#question5 {
- li#Griffindor {background-image: url('https://www.tapetus.pl/obrazki/m/206530.jpg');}
-li#Hufflepuff {background-image: url('https://bookwitty.imgix.net/https%3A%2F%2Fuploads.bookwitty.com%2F45718a04-9d6b-490a-ae69-e5a19a85b3fc-feature-original.jpeg?ixlib=rails-2.1.4&auto=format&q=60&w=200&h=140&fit=crop&s=a3c44e1f51c46ab0e41aa71408329e06');}
- li#Ravenclaw {background-image: url('https://ebooks.assure.ng/wp-content/uploads/2017/10/Harry-Potter-and-the-Goblet-of-Fire-200x140.jpg');}
- li#Slytherin {background-image: url('http://capcityradio.net/b945live/wp-content/uploads/sites/7/bfi_thumb/Harry-Potter-348za6p7ahgdwcy909kxl6.jpg');}
-}
+/* line 166, main.scss */
+#question6 li#Griffindor {
+  background-image: url("https://movietoday.org/wp-content/uploads/2017/09/Harry-Potter-and-the-Prisoner-of-Azkaban-full-movie-11-200x140.jpg"); }
+/* line 167, main.scss */
+#question6 li#Hufflepuff {
+  background-image: url("http://cdn.sheknows.com/allparenting.com/articles/a-guide-to-introducing-your-child-to-harry-potter-thumb.jpg"); }
+/* line 168, main.scss */
+#question6 li#Ravenclaw {
+  background-image: url("http://www.i-reviewmovies.com/pic/harrypotterchamber15.jpg"); }
+/* line 169, main.scss */
+#question6 li#Slytherin {
+  background-image: url("https://vignette.wikia.nocookie.net/harrypotter/images/7/7b/Aardvark-patronus.jpg/revision/latest/scale-to-width-down/200?cb=20170105060137"); }
 
-#question6 {
- li#Griffindor {background-image: url('https://movietoday.org/wp-content/uploads/2017/09/Harry-Potter-and-the-Prisoner-of-Azkaban-full-movie-11-200x140.jpg');}
- li#Hufflepuff {background-image: url('http://cdn.sheknows.com/allparenting.com/articles/a-guide-to-introducing-your-child-to-harry-potter-thumb.jpg');}
- li#Ravenclaw {background-image: url('http://www.i-reviewmovies.com/pic/harrypotterchamber15.jpg');}
- li#Slytherin {background-image: url('https://vignette.wikia.nocookie.net/harrypotter/images/7/7b/Aardvark-patronus.jpg/revision/latest/scale-to-width-down/200?cb=20170105060137');}
-}
+/* line 173, main.scss */
+#question7 li#Griffindor {
+  background-image: url("http://www.britbitsandclips.com/images/Sev4.jpg"); }
+/* line 174, main.scss */
+#question7 li#Hufflepuff {
+  background-image: url("https://movietoday.org/wp-content/uploads/2017/09/harry-potter-and-the-chamber-of-secrets-full-movie-17-200x140.jpg"); }
+/* line 175, main.scss */
+#question7 li#Ravenclaw {
+  background-image: url("https://d-nm.ppstatic.pl/kadr/k/r/3a/15/580b5a2100039_o,size,200x140,q,70,h,cbd0a0.jpg"); }
+/* line 176, main.scss */
+#question7 li#Slytherin {
+  background-image: url("https://i0.wp.com/www.halffullreviews.com/wp-content/uploads/2015/03/Harry_Potter_and_the_Sorcerers_Stone.jpg?resize=200%2C140"); }
 
-#question7 {
- li#Griffindor {background-image: url('http://www.britbitsandclips.com/images/Sev4.jpg');}
- li#Hufflepuff {background-image: url('https://movietoday.org/wp-content/uploads/2017/09/harry-potter-and-the-chamber-of-secrets-full-movie-17-200x140.jpg');}
- li#Ravenclaw {background-image: url('https://d-nm.ppstatic.pl/kadr/k/r/3a/15/580b5a2100039_o,size,200x140,q,70,h,cbd0a0.jpg');}
- li#Slytherin {background-image: url('https://i0.wp.com/www.halffullreviews.com/wp-content/uploads/2015/03/Harry_Potter_and_the_Sorcerers_Stone.jpg?resize=200%2C140');}
-}
+/* line 180, main.scss */
+#question8 li#Griffindor {
+  background-image: url("http://blog-imgs-53.fc2.com/t/o/m/tomdramaticcinedata/20130315212306a4ds.jpg"); }
+/* line 181, main.scss */
+#question8 li#Hufflepuff {
+  background-image: url("http://3.bp.blogspot.com/-uPrpxeT-gis/UG7QVXG52UI/AAAAAAAAPpo/vpBmcF8BDMQ/s400/Devon%2BMurray%2B1.jpg"); }
+/* line 182, main.scss */
+#question8 li#Ravenclaw {
+  background-image: url("http://play.ceiec.es/wp-content/uploads/2014/02/voldemort-200x140.jpg"); }
+/* line 183, main.scss */
+#question8 li#Slytherin {
+  background-image: url("https://www.baltictimes.com/media/phs/659/29106.jpg"); }
 
-#question8 {
- li#Griffindor {background-image: url('http://blog-imgs-53.fc2.com/t/o/m/tomdramaticcinedata/20130315212306a4ds.jpg');}
- li#Hufflepuff {background-image: url('http://3.bp.blogspot.com/-uPrpxeT-gis/UG7QVXG52UI/AAAAAAAAPpo/vpBmcF8BDMQ/s400/Devon%2BMurray%2B1.jpg');}
- li#Ravenclaw {background-image: url('http://play.ceiec.es/wp-content/uploads/2014/02/voldemort-200x140.jpg');}
- li#Slytherin {background-image: url('https://www.baltictimes.com/media/phs/659/29106.jpg');}
-}
+/*# sourceMappingURL=main.css.map */

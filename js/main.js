@@ -21,7 +21,7 @@ var arrHouses = [];
 var question1 = arrHouses.push(new Question("Great","Bold","Wise","Good"));
 var question2 = arrHouses.push(new Question("Selfish","Ordinary","Cowardly","Ignorant"));
 var question3 = arrHouses.push(new Question("A Glory Potion","A Love Potion","A Awesome Potion","A Power Potion"));
-var question4 = arrHouses.push(new Question("Think of your achievements","Opinion only matters when I'm alive","Miss you and smile","Ask for more stories of your adventures"));
+var question4 = arrHouses.push(new Question("Think of your achievements","Opinion only matters when I'm alive","Miss you and smile","Ask for stories of your adventures"));
 var question5 = arrHouses.push(new Question("Sea","Parchment","Crackling log fire","Home"));
 var question6 = arrHouses.push(new Question("Trumpet","Piano","Violin","Drums"));
 var question7 = arrHouses.push(new Question("Trusted","Praised","Liked","Envied"));
@@ -69,7 +69,7 @@ function sortingHouse(){
      ravenclaw: 0,
      hufflepuff: 0,
      slytherin: 0,
-     griffindor: 0,    
+     griffindor: 0,
   }
 
   for(var j = 0; j < arrIds.length; j++ ){
